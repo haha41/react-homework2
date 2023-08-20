@@ -1,4 +1,3 @@
-// import GoToButton from "./GoToButton";
 
 function Controller({ changeBanner, currentImgIndex, slideImg }) {
 

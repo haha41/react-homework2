@@ -14,7 +14,7 @@ function FoodList() {
       {Object.entries(foods).map(([foodKey, [imgPath, description]]) => (
         <div key={foodKey} className="foodItem">
           <img src={imgPath} alt={foodKey} />
-          <p>{description}</p>
+          <span className="text">{description}</span>
         </div>
       ))}
     </div>
