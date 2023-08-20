@@ -1,0 +1,214 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Header */
+.header {
+  border-bottom: 1px solid #f7bf31;
+}
+
+.headerWrapper {
+  width: 1522px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* NavList */
+.navListWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.navList {
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+}
+
+.navList:hover {
+  border-bottom: 3px solid #f7bf31;
+}
+
+/* MovePage */
+.movePage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movePageLink {
+  border-radius: 30px;
+  cursor: pointer;
+  width: 80px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 13px;
+  margin: 0 4px;
+  color: white;
+}
+
+/* Navigation */
+
+
+/* Footer */
+.footer {
+  background: #292929;
+}
+
+.footerWrapper {
+  width: 1522px;
+  height: 260px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  margin: auto;  
+}
+
+.footerLink {
+  height: 160px;
+  flex-grow: 1;
+  font-weight: bold;
+  color: white;
+}
+
+.footerLinkList {
+  height: 24px;
+
+  &:first-child a  {
+    color: yellow;
+  } 
+}
+
+.footerInform {
+  height: 160px;
+  flex-grow: 2;
+}
+
+.footerInformList{
+  height: 24px;
+  color: white;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.footerSns {
+  height: 160px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.footerSnsList {
+  text-indent: -9999px;
+  overflow: hidden;
+  padding: 0 4px;
+  margin: -20px 0;
+
+  & a::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(/public/ico_sns.png);
+  }
+}
+
+.footerSnsList.li_1 a::after {
+  background-position: 0 -40px;
+}
+.footerSnsList.li_2 a::after {
+  background-position: 0 -80px;
+}
+.footerSnsList.li_3 a::after {
+  background-position: 0 -120px;
+}
+.footerSnsList.li_4 a::after {
+  width: 100px;
+  height: 70px;
+  background: url(/public/wa-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/* Slide */
+.slide {
+  width: 1522px;
+  margin: auto;
+  margin-top: -50px;
+}
+
+/* Controller */
+.buttonGroup {
+  width: 1522px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+  transform: translateY(220px);  
+}
+
+.prev {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.next {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  width: 1522px;
+  height: 140px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  margin: auto;
+  background: pink;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  background: yellow;
+  display: block;
+}
+
+/* MainImage */
+.foodList{
+  background: green;
+  /* display: grid; */
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* grid-template-columns: auto; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-content: center; */
+}
+
+.foodItem {
+  /* width: 366px; */
+  /* height: 438px; */
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* text-align: center; */
+  flex-grow: 1;
+
+}
