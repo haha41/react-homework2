@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import tailwind from '@/styles/tailwind.css';
 
-function NavList({isHover, handleHover}) {
+function NavList() {
 
   const renderList = [
     'Menu',
@@ -15,9 +15,7 @@ function NavList({isHover, handleHover}) {
         {renderList.map((item) => {
           return <li 
             key={item} 
-            className="navList" 
-            onMouseEnter={handleHover} 
-            onMouseLeave={handleHover} >{item}</li>;
+            className="navList">{item}</li>;
         })
       }
       </ul>
