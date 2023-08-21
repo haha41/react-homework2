@@ -27,7 +27,7 @@ function MovePage() {
               </div>;
       })}
         <button type="button" className="search">
-          <img src="/public/ico_search.png" alt="검색" />
+          <img src="/ico_search.png" alt="검색" />
         </button>
     </div>
   )

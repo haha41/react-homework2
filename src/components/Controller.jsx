@@ -13,8 +13,8 @@ function Controller({ changeBanner, currentImgIndex, slideImg }) {
 
   return (
     <div role="group" className="buttonGroup">
-      <img src="/public/previous.png" alt="이전 이미지" className="prev" onClick={handlePreviousImage}/>
-      <img src="/public/next.png" alt="다음 이미지" className="next" onClick={handleNextImage}/>
+      <img src="/previous.png" alt="이전 이미지" className="prev" onClick={handlePreviousImage}/>
+      <img src="/next.png" alt="다음 이미지" className="next" onClick={handleNextImage}/>
     </div>
   );
 }
